@@ -1,2 +1,3 @@
-# Next JS & Open AI / GPT: Next-generation Next JS & AI apps
-This is the starter repo for the [Next JS & Open AI / GPT: Next-generation Next JS & AI apps course](https://www.udemy.com/course/next-js-ai/?referralCode=CF9492ACD4991930F84E).
+# Next JS & Open AI / GPT: Blog Maker App
+[Next JS & Open AI / GPT:  Next JS & AI]
+Create SEO friendly Blogs using Open Ai's gpt-4o-mini language model
