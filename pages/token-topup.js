@@ -25,9 +25,10 @@ export default function TokenTopup() {
           Need more tokens to keep creating? Click the button below to purchase additional tokens.
         </p>
         <p className="text-xs text-gray-500 mt-4 italic">
-          Disclaimer: For testing purposes, please enter <span className="font-mono font-semibold">"4242 4242 4242 4242"</span> where it requires a credit card number.
+          Disclaimer: For testing purposes, please enter <span className="font-mono font-semibold">&quot;4242 4242 4242 4242&quot;</span>
+          where it requires a credit card number.
         </p>
-        // Button to add tokens
+        {/* Button to add tokens */}
         <button 
           className="btn hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300"
           onClick={handleClick}
