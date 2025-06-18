@@ -1,3 +1,5 @@
+
+
 import { getSession, withApiAuthRequired } from '@auth0/nextjs-auth0';
 import { OpenAIApi, Configuration } from 'openai';
 import clientPromise from '../../lib/mongodb';

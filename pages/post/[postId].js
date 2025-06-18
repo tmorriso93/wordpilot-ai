@@ -60,7 +60,16 @@ export default function Post(props) {
           <div className="text-sm font-bold mt-6 p-2 bg-stone-200 rounded-md">
             Blog post
           </div>
-          <div dangerouslySetInnerHTML={{ __html: props.blogPost || '' }} />
+          {/* ******** */}
+          {/* <div dangerouslySetInnerHTML={{ __html: props.blogPost || '' }} /> */}
+          <div className="space-y-4 leading-relaxed">
+          {props.blogPost
+          .split(/\n{2,}/) // Split by double line breaks (paragraphs)
+          .map((para, index) => (
+          <p key={index}>{para.trim()}</p>
+          ))}
+          </div>
+
           <div className="my-4">
             {!showDeleteConfirm && (
             <button className="btn bg-red-600 hover:bg-red-700" onClick={() => setShowDeleteConfirm(true)}
@@ -69,10 +78,13 @@ export default function Post(props) {
             </button>
             )}
             {!!showDeleteConfirm &&
+            // warning message
               <div className="max-w-[90%] m-auto">
                 <p className="p-2 bg-red-300 text-center">Are you sure you want to delete this post? This action is irreversible</p>
                 <div className="grid grid-cols-2 -2 gap-2">
-                  <button onClick={() => showDeleteConfirm(false) } className="btn bg-stone-600 hover:bg-stone-700">cancel</button>
+                  <button onClick={() => setShowDeleteConfirm(false)} className="btn bg-stone-600 hover:bg-stone-700">
+                    Cancel
+                  </button>
                   <button onClick={handleDeleteConfirm} className="btn bg-red-600 hover:bg-red-700">confirm delete</button>
                 </div>
               </div> }

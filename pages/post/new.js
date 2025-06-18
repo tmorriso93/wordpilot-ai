@@ -80,7 +80,7 @@ export default function NewPost(props) {
             value={keywords} 
             onChange={(e) => setKeywords(e.target.value)}
             maxLength={80}
-             placeholder="<keyword1>, <keyword2>, <keyword3>"
+             placeholder="keyword1, keyword2, keyword3"
           />
           <small className='text-xs text-gray-600 mt-4 mb-4 italic'>
             Seperate keywords with a comma
