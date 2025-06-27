@@ -42,14 +42,14 @@ export default function TokenTopup() {
 
   // display the side bar
   TokenTopup.getLayout = function getLayout(page, pageProps) {
-      return<AppLayout {...pageProps}>{page}</AppLayout>;
+      return <AppLayout {...pageProps}>{page}</AppLayout>;
     };
   
    export const getServerSideProps = withPageAuthRequired({
     async getServerSideProps(ctx){
       const props = await getAppProps(ctx);
       return {
-        props
+        props,
       };
     },
    });
