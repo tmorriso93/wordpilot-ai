@@ -44,12 +44,12 @@ export const AppLayout = ({
                             New Post 
                         </Link>
                         {/* Token */}
-                        {/* <Link href="/token-topup" className="block mt-2 text-center"> */}
+                        <Link href="/token-topup" className="block mt-2 text-center">
                         <div className="block mt-2 text-center">
                         <FontAwesomeIcon icon={faCoins} className="text-yellow-300" />
                             <span className="pl-1">{availableTokens} tokens available</span>
                             </div>
-                        {/* </Link> */}
+                        </Link>
                         </div>
                             <div className="px-4 flex-1 overflow-auto bg-gradient-to-b from-slate-800 to-cyan-800">
                                 {posts.map((post) => (
